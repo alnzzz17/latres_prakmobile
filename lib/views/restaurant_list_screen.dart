@@ -12,11 +12,10 @@ class RestaurantListScreen extends StatefulWidget {
   const RestaurantListScreen({super.key});
 
   @override
-  _RestaurantListScreenState createState() => _RestaurantListScreenState();
+  RestaurantListScreenState createState() => RestaurantListScreenState();
 }
 
-class _RestaurantListScreenState extends State<RestaurantListScreen> {
-  late Future<List<Restaurant>> _restaurantsFuture;
+class RestaurantListScreenState extends State<RestaurantListScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
   late Future<List<Restaurant>> _currentFuture;
